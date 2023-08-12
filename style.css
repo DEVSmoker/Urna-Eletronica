@@ -177,3 +177,72 @@ body {
     background-color: #FFF;
     text-align: center;
 }
+
+.aviso--grande {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.aviso--gigante {
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilos gerais para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .urna {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tela {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-1-left {
+        width: 100%;
+    }
+
+    .d-1-right {
+        display: none;
+    }
+
+    .d-1-4 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .teclado {
+        margin-top: 20px;
+    }
+
+    .teclado--linha {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .teclado--botao {
+        width: 30%;
+        font-size: 18px;
+    }
+
+    .teclado--botao.btn-branco,
+    .teclado--botao.btn-corrige,
+    .teclado--botao.btn-confirma {
+        width: 100%;
+    }
+}
